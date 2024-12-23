@@ -1,0 +1,110 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #4a3d39;
+    color: white;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #c3a69b;
+}
+
+/* Content area styling */
+.content {
+    margin-left: 270px;
+    padding: 30px;
+    width: 100%;
+}
+
+.content h1 {
+    font-size: 28px;
+    color: #4a3d39;
+}
+
+/* Form and table styling */
+form input, form button {
+    margin: 10px 0;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #4a3d39;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c3a69b;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4a3d39;
+    color: white;
+}
+
+table td button {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+table td button:hover {
+    background-color: #c3a69b;
+}
+

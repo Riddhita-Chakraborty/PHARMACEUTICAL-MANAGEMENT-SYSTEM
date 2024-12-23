@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Inventory</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Pharmacy System</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="inventory.html">Manage Inventory</a></li>
+            <li><a href="customer_records.html">Customer Records</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="index.html" id="logout">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Drug Inventory</h1>
+        <form id="addDrugForm">
+            <input type="text" id="drugName" placeholder="Drug Name" required>
+            <input type="number" id="drugPrice" placeholder="Price" required>
+            <label for="mfd">Manufacturing date</label>
+            <input type="date" id="mfd" placeholder="Manufacturing date" required>
+            <label for="exp">Expiry date</label>
+            <input type="date" id="exp" placeholder="Expiry date" required>
+            <input type="number" id="drugStock" placeholder="Stock Quantity" required>
+            <button type="submit">Add Drug</button>
+        </form>
+
+        <h3>Inventory List</h3>
+        <table id="inventoryTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>mfd</th>
+                    <th>exp</th>
+                    <th>Stock</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Drugs will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="scripts/inventory.js"></script>
+</body>
+</html>

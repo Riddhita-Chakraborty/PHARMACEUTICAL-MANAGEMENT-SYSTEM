@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Pharmacy System</h2>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="inventory.html">Manage Inventory</a></li>
+            <li><a href="customer_records.html">Customer Records</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="index.html" id="logout">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Sales</h1>
+        <form id="addSaleForm">
+            <input type="text" id="saleCustomerName" placeholder="Customer Name" required>
+            <input type="text" id="saleDrugName" placeholder="Drug Name" required>
+            <input type="number" id="saleQuantity" placeholder="Quantity" required>
+            <button type="submit">Record Sale</button>
+        </form>
+
+        <h3>Sales List</h3>
+        <table id="salesTable">
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Drug</th>
+                    <th>Quantity</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sales will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="scripts/sales.js"></script>
+</body>
+</html>
